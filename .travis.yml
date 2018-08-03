@@ -1,0 +1,9 @@
+env:
+  global:
+    # Doctr deploy key for drdoctr/travis-ci-com-testing
+    - secure: "UT+KOCcKnHIUv9G7AZVt5FytJHnkI/SnUCopZqdr77IBdBYK7ayrTcQjaZxvUGhRqyNLTWd7LPIMsbAzINZHPGMHdk9J37Oo9W5L7H1AmS3Hm2oSRGLYO0tQAi2fXFC7aA1sbkBqgzxGzCw0+hmNEdHKeLR1/PvCE3sznJuSUjBoySjlfsB4kQqE5TR614ivhbf7n0qJfpbzFd/zf9+90LsHCiPC2yb0+S/ZA0z5EXKqGhxgPJF08ACVu9DX7ZSLZBQhJGPT8ueGZnHUEo/PkRZp6DnobDxRja2Q8NK+K5aZwr50alONZyyMqOnlGRH6U7Y4hYJCVL4rc8k0hFxIFnMRTbw5rOEngmp1QI5PDjhsyBLdUC0rM+KQuimOS/Odx2adHz0vUgnJhZwSTwy9m6uKMkg2RZ4B36sEPVxJWIZNgIMa2IAxnzf1UQg7NQJMeqzgRRuiG+RjnwGiqCLSGuIS2xzK7x7veXu94RC3s3BIu6Ohoo1JyrfkfkeZRCA3ZztcB1lEVHFR9mBDg1HiEgHQIz6S/UvsazDjPJdAuR1PEz3+Kwqvb0+g8nrP9aQ05Aypx4ZtKdUS/JYE9pqPKxD4ssEFXvr6k8/g5aYjSeqd0dWZL8OzgfxgbCaXKYcst8pzla7gl3DOc10qMjjZorx/t1ni2RUK1/0G+Duod0w="
+
+script:
+  - set -e
+  - pip install doctr
+  - doctr deploy --built-docs test-html/ .
