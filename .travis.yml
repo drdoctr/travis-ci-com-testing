@@ -9,6 +9,7 @@ env:
     - secure: "N9Vm0jRje6Qv+BfLQ+/Ab4TrK+Rac83oL/WuP9DurBRdNImDdCnJdrQ+SaoL0bvnlIF6+722RwBXvPj3ucSPabCnhv6d99+UZOqpcnBV+GmOGeZEPhru9ohxdxWbRKBavi8PttqTuHkzrIaxkO2CkgsBcyxx3Iv/cEMmdIjy7nJ0KzD10CyJiFoP9gSUaRY6x5BoeMIUnK20/8m7OTgv5chZZNjfzt/6SW2xBmv3zxgkcOOoRCQqHs2OKP7i8xGb0sdQwmozW61U4q5jaVFcR/9B1rlhEpV+ALHbKUVHoxRem8nseKtNhDF7omAsTumy4jxF6IfW2LgfBrouueLSmFpwXSggqusrHhDuOnx1nBS8yyS5iJ/pD6D9If6Cuyf9F6+TJ0PnqtntuPeMUJ2DMJzEwgdgXEb2EktT5dj2Tj+NpczOeAvyh7aYYskKPuPojU1KAI4JZBV6ohSfMTGqwIr/8pOoyZ7iV7uPNN3Z5qWcjeALNopBkQECrShXQ/5CUc5pe5pq9JjPCIy4fBAi/v7labZFk2QiGCXkEGLxtMJbpVt9V8jqtgRo+TGKkMIlTWuf2oFcLwlIrOXYDT17Gw8r55YQ+rOYNKWfOA8ppmPBmVZCizry/IqJR+yk8+ciQ8WDhpVFsfs1J/UJtvOju1XZ6jqga2LgKB38WrxrLyQ="
 
 script:
+  - env
   - set -e
   - pip install doctr
   - doctr deploy --built-docs test-html/ .
