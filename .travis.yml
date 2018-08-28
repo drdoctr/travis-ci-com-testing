@@ -11,5 +11,5 @@ env:
 script:
   - env
   - set -e
-  - pip install doctr
+  - pip install git+https://github.com/drdoctr/doctr.git@travis-ci-dot-com
   - doctr deploy --built-docs test-html/ .
